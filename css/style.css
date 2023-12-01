@@ -7,6 +7,26 @@
     --bitter-lemon: #CFEC1A;
 }
 
+/*TYPOGRAPHY*/
+h1 {}
+
+h2 {}
+
+h3 {}
+
+h4 {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.125rem;
+    line-height: 130%;
+}
+
+p {
+    font-size: 1.063rem;
+    line-height: 150%;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -19,6 +39,7 @@ body {
     min-height: 100vh;
 }
 
+/*HEADER - NAV*/
 .container {
     max-width: 1440px;
     width: 90%;
@@ -33,14 +54,14 @@ body {
     display: flex;
 }
 
-.navbar .nav-container li {
+li {
     list-style: none;
 }
 
 .navbar, .nav-container a {
     text-decoration: none;
     text-transform: uppercase;
-    color: var(--text-gray);
+    color: var(--almost-black);
     font-weight: 700;
     font-size: 1.125rem;
     line-height: 130%;
@@ -85,7 +106,7 @@ a:hover {
     height: 4px;
     width: 100%;
     border-radius: 4px;
-    background-color: var(--text-gray);
+    background-color: var(--almost-black);
 }
 
 .nav-container .hamburger-lines .line1 {
@@ -136,13 +157,83 @@ a:hover {
 
 .logo {
     width: 122px;
+    height: 84px;
 }
 
 .menu-desktop {
     display: none;
 }
 
+/*FOOTER*/
+.footer-container {
+    background-color: var(--black);
+    height: 735px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.footer-logo {
+    width: 143px;
+    height: 111px;
+    margin-top: 25px;
+}
+
+.footer-content-container {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+}
+
+.footer-list-container {
+    display: flex;
+    flex-direction: column;
+    gap: 34px;
+    align-items: center;
+}
+
+footer .list-items{
+    color: var(--white);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+footer .list-items li {
+    font-size: 1.063rem;
+    line-height: 150%;
+    font-weight: 400;
+    opacity: 90%;
+}
+
+.socials-container {
+    display: flex;
+    gap: 1.969rem;
+    justify-content: center;
+}
+
+.social-icon {
+    color: var(--white);
+}
+
+.footer-container .line {
+    display: block;
+    height: 1px;
+    width: 100%;
+    background-color: var(--white);
+    opacity: 50%;
+}
+
+.footer-container small {
+    color: var(--active-gray);
+}
+
 @media (min-width: 768px) {
+    /*HEADER - NAV*/
     .nav-container {
         height: 94px;
     }
@@ -161,6 +252,7 @@ a:hover {
 }
 
 @media (min-width: 1280px) {
+    /*HEADER - NAV*/
     .hamburger-menu-container {
         display: none;
     }
