@@ -41,19 +41,6 @@ body {
     margin: 0;
 }
 
-/*HEADER - NAV*/
-.container {
-    margin: 0 16px;
-}
-
-.navbar {
-    width: 100%;
-}
-
-.navbar .menu-items {
-    display: flex;
-}
-
 ul {
     padding: 0;
     margin: 0;
@@ -63,8 +50,21 @@ li {
     list-style: none;
 }
 
-.navbar, .nav-container a {
+a {
     text-decoration: none;
+}
+
+/*HEADER - NAV*/
+.container {
+    margin: 0 16px;
+    z-index: 2;
+}
+
+.navbar {
+    width: 100%;
+}
+
+.nav-container a {
     text-transform: uppercase;
     color: var(--almost-black);
     font-weight: 700;
@@ -72,17 +72,17 @@ li {
     line-height: 130%;
 }
 
+.nav-container  a:hover {
+    color: var(--orange);
+    text-decoration: line-through;
+}
+
 .logo svg {
-    margin: 8px auto;
+    margin: 8px 0;
 }
 
 .menu-items a {
-    font-size: 26px;
-}
-
-a:hover {
-    color: var(--orange);
-    text-decoration: line-through;
+    font-size: 24px;
 }
 
 .menu-items a:hover {
@@ -102,7 +102,7 @@ a:hover {
     width: 34px;
     top: 33px;
     right: 3px;
-    z-index: 5;
+    z-index: 3;
     opacity: 0;
     cursor: pointer;
 }
@@ -141,19 +141,21 @@ a:hover {
 }
 
 .navbar .menu-items {
-    padding-top: 68px;
+    background-color: var(--orange);
     height: 100vh;
+    width: 100vw;
+    padding-top: 68px;
+    margin-top: -4px;
+    margin-left: -16px;
     transform: translate(-150%);
+    transition: transform 0.5s ease-in-out;
     display: flex;
     flex-direction: column;
-    margin: 0;
-    transition: transform 0.5s ease-in-out;
     text-align: center;
-    background-color: var(--orange);
 }
 
 .navbar .menu-items li {
-    margin-bottom: 1.7rem;
+    margin-bottom: 2rem;
 }
 
 .nav-container input[type="checkbox"]:checked ~ .menu-items {
@@ -185,6 +187,7 @@ a:hover {
     align-items: center;
     gap: 40px;
     padding: 0;
+    z-index: 1;
 }
 
 .flex-container {
@@ -218,7 +221,7 @@ footer .list-items li {
     font-size: 1.063rem;
     line-height: 150%;
     font-weight: 400;
-    opacity: 80%;
+    opacity: 90%;
 }
 
 .socials-list {
@@ -253,7 +256,8 @@ footer .list-items li {
 }
 
 .footer-container small {
-    color: var(--active-gray);
+    color: var(--white);
+    opacity: 80%;
 }
 
 @media (min-width: 768px) {
@@ -276,6 +280,10 @@ footer .list-items li {
         height: 28px;
         width: 40px;
         top: 33px;
+    }
+
+    .navbar .menu-items {
+        margin-top: 1px;
     }
 
     /*FOOTER*/
