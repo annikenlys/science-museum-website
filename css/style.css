@@ -5,6 +5,8 @@
     --text-gray: #2D2D2D;
     --active-gray: #9E9B9B;
     --bitter-lemon: #CFEC1A;
+    --footer-blue: #0A2459;
+    --orange: #D35711;
 }
 
 /*TYPOGRAPHY*/
@@ -17,9 +19,10 @@ h3 {}
 h4 {
     text-decoration: none;
     text-transform: uppercase;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 1.125rem;
-    line-height: 130%;
+    line-height: 150%;
+    margin: 0;
 }
 
 p {
@@ -29,21 +32,18 @@ p {
 
 * {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
 }
 
 body {
     background-color: var(--white);
     font-family: 'Inter', sans-serif;
     min-height: 100vh;
-    /*overflow: hidden;*/
+    margin: 0;
 }
 
 /*HEADER - NAV*/
 .container {
-    max-width: 1440px;
-    margin: 0 13px;
+    margin: 0 16px;
 }
 
 .navbar {
@@ -52,6 +52,11 @@ body {
 
 .navbar .menu-items {
     display: flex;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
 }
 
 li {
@@ -67,8 +72,21 @@ li {
     line-height: 130%;
 }
 
+.logo svg {
+    margin: 8px auto;
+}
+
+.menu-items a {
+    font-size: 26px;
+}
+
 a:hover {
-    color: var(--bitter-lemon);
+    color: var(--orange);
+    text-decoration: line-through;
+}
+
+.menu-items a:hover {
+    color: var(--white);
 }
 
 .nav-container {
@@ -131,7 +149,7 @@ a:hover {
     margin: 0;
     transition: transform 0.5s ease-in-out;
     text-align: center;
-    background-color: #f5f5f5f2;
+    background-color: var(--orange);
 }
 
 .navbar .menu-items li {
@@ -143,20 +161,14 @@ a:hover {
 }
 
 .nav-container input[type="checkbox"]:checked ~ .hamburger .line1 {
-    transform: rotate(45deg);
+    transform: rotate(40deg);
 }
 
 .nav-container input[type="checkbox"]:checked ~ .hamburger .line2 {
     transform: scaleY(0);
 }
 .nav-container input[type="checkbox"]:checked ~ .hamburger .line3 {
-    transform: rotate(-45deg);
-}
-
-.logo {
-    width: 122px;
-    height: 84px;
-
+    transform: rotate(-40deg);
 }
 
 .nav-desktop {
@@ -165,25 +177,20 @@ a:hover {
 
 /*FOOTER*/
 .footer-container {
-    background-color: var(--black);
+    background-color: var(--footer-blue);
     height: 725px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     gap: 40px;
-    padding: 25px 0 60px 0;
+    padding: 0;
 }
 
 .flex-container {
     display: flex;
     flex-direction: column;
     gap: 40px;
-}
-
-.footer-logo {
-    width: 143px;
-    height: 111px;
-    margin: 0;
 }
 
 .content-container {
@@ -205,32 +212,29 @@ footer .list-items{
     text-align: center;
     display: flex;
     flex-direction: column;
-    gap: 4px;
 }
 
 footer .list-items li {
     font-size: 1.063rem;
     line-height: 150%;
     font-weight: 400;
-    opacity: 90%;
-}
-
-.socials-container {
-    display: flex;
-    justify-content: center;
+    opacity: 80%;
 }
 
 .socials-list {
-    height: 20px;
-    width: 222px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0;
 }
 
 .social-icon {
     color: var(--white);
     font-size: 24px;
+}
+
+.socials-list a:hover {
+    color: var(--active-gray);
 }
 
 .copyright-container {
@@ -243,7 +247,7 @@ footer .list-items li {
 .footer-container .line {
     display: block;
     height: 1px;
-    width: 100%;
+    width: 100vw;
     background-color: var(--white);
     opacity: 50%;
 }
@@ -258,10 +262,14 @@ footer .list-items li {
         height: 94px;
     }
 
+    .logo svg {
+        margin-top: 13px;
+    }
+
     .nav-container .checkbox {
         height: 28px;
         width: 40px;
-        top: 31px;
+        top: 33px;
     }
 
     .nav-container .hamburger {
@@ -277,7 +285,7 @@ footer .list-items li {
         flex-direction: column;
         align-items: flex-end;
         gap: 30px;
-        padding: 30px 16px;
+        padding: 30px 0;
     }
 
     .flex-container {
@@ -296,28 +304,31 @@ footer .list-items li {
         justify-content: space-between;
     }
 
+    .logo-footer {
+        margin-left: 16px;
+    }
+
     .footer-list-container {
         height: 150px;
         width: 596px;
         display: flex;
         flex-direction: row;
         align-items: flex-start;
-        margin-top: 13px;
-        gap: 0;
         justify-content: space-between;
+        margin-right: 16px;
     }
 
     footer .list-items{
         text-align: left;
     }
 
-    .socials-container {
-        align-items: center;
-        height: 30px;
-    }
-
     .socials-list {
-        justify-content: space-evenly;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0;
+        width: 194px;
+        margin-right: 16px;
     }
 
     .copyright-container {
@@ -325,16 +336,20 @@ footer .list-items li {
         align-items: flex-end;
         width: 100%;
     }
+
+    .footer-container small {
+        margin-right: 16px;
+    }
 }
 
 @media (min-width: 1280px) {
     /*HEADER - NAV*/
-    .toggle-menu-container {
-        display: none;
+    .container {
+        margin: 0 50px;
     }
 
-    .container {
-        width: 100%;
+    .toggle-menu-container {
+        display: none;
     }
 
     .nav-container {
@@ -345,51 +360,68 @@ footer .list-items li {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin: 0 50px;
     }
 
     .nav-desktop {
-        margin-right: 3px;
+        margin: 0;
         display: flex;
         gap: 40px;
     }
 
     /*FOOTER*/
     .footer-container {
-        height: 192px;
+        height: 200px;
+        display: flex;
+        justify-content: space-between;
+        padding: 24px 0 24px 0;
         gap: 0;
-        padding: 20px 50px;
-        justify-content: center;
     }
 
     .flex-container {
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
         align-items: center;
-        gap: 0;
     }
 
     .content-container {
         display: flex;
-        align-items: flex-start;
+        gap: 71px;
         justify-content: flex-start;
-        gap: 162px;
+    }
+
+    .logo-footer {
+        margin-left: 50px;
     }
 
     .footer-list-container {
         height: 68px;
         width: 800px;
+        display: flex;
+        align-items: stretch;
+        justify-content: space-between;
     }
 
     .list-items .opening-list {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
-        gap: 26px;
+        gap: 24px;
+    }
+
+    .socials-list {
+        width: 194px;
+        margin-right: 50px;
     }
 
     .copyright-container {
-        gap: 20px;
+        display: flex;
+        align-items: center;
+        margin: 0;
+    }
+
+    .footer-container small {
+        display: flex;
+        align-self: flex-end;
+        margin-right: 50px;
     }
 }
