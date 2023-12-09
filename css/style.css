@@ -349,6 +349,32 @@ footer {
     .navbar .menu-items {
         margin-top: 1px;
     }
+
+    /*FOOTER*/
+    .footer-container {
+        max-width: 834px;
+    }
+
+    .footer-content-container {
+        gap: 0;
+    }
+
+    .footer-top-text {
+        height: 385px;
+        margin-top: -1px;
+    }
+
+    .footer-top-text span:nth-child(1) {
+        font-size: 132px;
+    }
+
+    .footer-top-text span:nth-child(2) {
+        font-size: 197px;
+    }
+
+    .footer-top-text span:nth-child(3) {
+        font-size: 191px;
+    }
 }
 
 /* DESKTOP */
@@ -376,5 +402,50 @@ footer {
         margin: 0;
         display: flex;
         gap: 40px;
+    }
+
+    /*FOOTER*/
+    .footer-container {
+        max-width: 1440px;
+    }
+
+    .footer-top-text {
+        height: 670px;
+        line-height: 64%;
+    }
+
+    .footer-top-text span:nth-child(1) {
+        font-size: 228px;
+    }
+
+    .footer-top-text span:nth-child(2) {
+        font-size: 346px;
+    }
+
+    .footer-top-text span:nth-child(3) {
+        font-size: 332px;
+    }
+
+    .footer-content-container {
+        padding: 30px 50px;
+        margin: 0;
+    }
+
+    .info-list-container {
+        height: 75px;
+        width: 780px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0;
+    }
+
+
+    .opening-hours-list {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
     }
 }
