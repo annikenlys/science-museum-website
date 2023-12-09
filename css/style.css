@@ -1,3 +1,4 @@
+/*DESIGN SYSTEM*/
 :root {
     --white: #F5F5F5;
     --black: #050206;
@@ -42,26 +43,23 @@ body {
 }
 
 ul {
+    list-style: none;
     padding: 0;
     margin: 0;
-}
-
-li {
-    list-style: none;
 }
 
 a {
     text-decoration: none;
 }
 
-/*HEADER - NAV*/
-.container {
-    margin: 0 16px;
-    z-index: 2;
+/*HEADER*/
+.navbar {
+    padding: 0 16px;
 }
 
-.navbar {
-    width: 100%;
+.container {
+    margin: 0;
+    z-index: 2;
 }
 
 .nav-container a {
@@ -82,7 +80,7 @@ a {
     font-size: 24px;
 }
 
-.menu-items a:hover, a:focus {
+.menu-items a:hover {
     color: var(--white);
     transition: all 0.4s ease-in-out;
 }
@@ -180,15 +178,10 @@ a {
 footer {
     background-color: var(--footer-blue);
     color: var(--white);
-    width: 100%;
-    height: 900px;
-    display: flex;
-    justify-content: center;
 }
 
 .footer-container {
     display: flex;
-    height: 100%;
     flex-direction: column;
     align-items: center;
     z-index: 1;
@@ -196,11 +189,10 @@ footer {
 }
 
 .footer-content-container {
-    width: 398px;
-    height: 558px;
     display: flex;
     flex-direction: column;
     gap: 60px;
+    margin-bottom: 50px;
 }
 
 .logo-img {
@@ -212,20 +204,19 @@ footer {
 }
 
 .info-list-container {
-    width: 100%;
     height: 393px;
     display: flex;
     flex-direction: column;
     gap: 50px;
 }
 
-.list-items h4 {
-    margin-bottom: 4px;
-}
-
 .list-items {
     display: flex;
     flex-direction: column;
+}
+
+.list-items h4 {
+    margin-bottom: 4px;
 }
 
 .list-items li {
@@ -248,7 +239,7 @@ footer {
     padding: 0;
 }
 
-.socials-list a:hover {
+.socials-list a:hover, a:focus {
     color: var(--active-gray);
     transition: all 0.1s ease-in-out;
 }
@@ -265,7 +256,6 @@ footer {
     flex-direction: column;
     gap: 30px;
     align-items: flex-end;
-    margin-bottom: 50px;
 }
 
 .copyright-container {
@@ -284,7 +274,7 @@ footer {
 }
 
 @media (min-width: 768px) {
-    /*HEADER - NAV*/
+    /*HEADER*/
     .nav-container {
         height: 94px;
     }
@@ -307,9 +297,9 @@ footer {
 }
 
 @media (min-width: 1280px) {
-    /*HEADER - NAV*/
-    .container {
-        margin: 0 50px;
+    /*HEADER*/
+    .navbar {
+        padding: 0 50px;
     }
 
     .toggle-menu-container {
