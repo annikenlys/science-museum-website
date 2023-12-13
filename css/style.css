@@ -35,21 +35,22 @@ p {
     color: var(--white);
     border: solid 2px var(--white);
     height: 60px;
-    width: 260px;
+    width: 300px;
     padding: 14px 64px;
+    font-size: 1.15rem;
+    font-weight: 600;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     text-transform: uppercase;
+    margin: 0;
 }
 
 .btn-primary:hover {
-    color: var(--orange);
-    font-size: 20px;
-    font-weight: 700;
-    border: none;
-    transition: all 0.5s ease-in-out;
+    font-weight: 800;
+    font-size: 1.2rem;
+    transition: all 0.2s ease;
 }
 
 
@@ -201,7 +202,11 @@ main {
 
 /*FOOTER*/
 footer {
-    background-color: var(--blue);
+    /*background-color: var(--text-color);*/
+    /*background-color: var(--blue);*/
+    /*background-color: #242F40;*/
+    /*background-color: #243037;*/
+    background-color: #10407E;
     color: var(--white);
     display: flex;
     justify-content: center;
@@ -402,7 +407,7 @@ footer {
     .nav-desktop {
         margin: 0;
         display: flex;
-        gap: 40px;
+        gap: 60px;
     }
 
     .nav-container a {
