@@ -44,13 +44,13 @@ p {
     align-items: center;
     text-align: center;
     text-transform: uppercase;
-    margin: 0;
 }
 
 .btn-primary:hover {
     font-weight: 800;
     font-size: 1.2rem;
     transition: all 0.2s ease;
+    margin: 0;
 }
 
 
@@ -291,8 +291,8 @@ footer {
     padding: 0;
 }
 
-.socials-list a:hover, a:focus {
-    color: var(--active);
+.socials-list a:hover {
+    color: var(--orange);
     transition: all 0.1s ease-in-out;
 }
 
@@ -418,7 +418,7 @@ footer {
         line-height: 130%;
     }
 
-    .nav-container  a:hover, a:focus {
+    .nav-container  a:hover {
         color: var(--orange);
         transition: all 0.2s ease-in-out;
     }
