@@ -23,21 +23,12 @@
 
 <body>
     <header>
-        <div class="hero">
+        <nav>
+            <div class="navbar">
+                <div class="container nav-container">
 
-            <video autoplay loop muted playsinline class="hero-video hero-video-large">
-                <source src="assets/hero-video-large.mp4" type="video/mp4">
-            </video>
-            <video autoplay loop muted playsinline class="hero-video hero-video-small">
-                <source src="assets/hero-video-mobile.mp4" type="video/mp4">
-            </video>
-
-            <nav>
-                <div class="navbar">
-                    <div class="container nav-container">
-
-                        <!--Logo-->
-                        <span class="logo">
+                    <!--Logo-->
+                    <span class="logo">
                             <svg width="156" height="67" viewBox="0 0 156 67" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
                                 <path d="M4.28977 54.2784V55.6989C4.14394 55.7178 4.01231 55.7566 3.89489 55.8153C3.77746 55.8741 3.67708 55.9517 3.59375 56.0483C3.51042 56.1449 3.44697 56.2595 3.40341 56.392C3.35795 56.5227 3.33523 56.6676 3.33523 56.8267C3.33523 57.1089 3.40436 57.3523 3.54261 57.5568C3.68087 57.7595 3.88068 57.9157 4.14205 58.0256C4.40341 58.1335 4.7197 58.1875 5.09091 58.1875C5.47727 58.1875 5.80114 58.1326 6.0625 58.0227C6.32197 57.911 6.51799 57.7547 6.65057 57.554C6.78125 57.3513 6.84659 57.1117 6.84659 56.8352C6.84659 56.6799 6.8267 56.5388 6.78693 56.4119C6.74716 56.2831 6.68939 56.1705 6.61364 56.0739C6.53598 55.9754 6.44223 55.8949 6.33239 55.8324C6.22064 55.768 6.0947 55.7235 5.95455 55.6989L5.96307 54.2784C6.22064 54.303 6.47443 54.3778 6.72443 54.5028C6.97443 54.6259 7.20265 54.7955 7.40909 55.0114C7.61364 55.2273 7.77652 55.4905 7.89773 55.8011C8.01894 56.1098 8.07955 56.464 8.07955 56.8636C8.07955 57.3902 7.96402 57.8617 7.73295 58.2784C7.5 58.6932 7.16098 59.0208 6.71591 59.2614C6.27083 59.5019 5.72917 59.6222 5.09091 59.6222C4.45076 59.6222 3.90814 59.5 3.46307 59.2557C3.01799 59.0114 2.67992 58.6809 2.44886 58.2642C2.2178 57.8475 2.10227 57.3807 2.10227 56.8636C2.10227 56.5114 2.15152 56.1856 2.25 55.8864C2.34659 55.5871 2.48864 55.3239 2.67614 55.0966C2.86174 54.8693 3.08996 54.6847 3.3608 54.5426C3.63163 54.4006 3.94129 54.3125 4.28977 54.2784ZM5.09091 47.9822C5.73106 47.9822 6.27367 48.1054 6.71875 48.3516C7.16383 48.5978 7.50189 48.9311 7.73295 49.3516C7.96402 49.7701 8.07955 50.2398 8.07955 50.7607C8.07955 51.2834 7.96307 51.754 7.73011 52.1726C7.49716 52.5911 7.15909 52.9235 6.71591 53.1697C6.27083 53.4141 5.72917 53.5362 5.09091 53.5362C4.45076 53.5362 3.90814 53.4141 3.46307 53.1697C3.01799 52.9235 2.67992 52.5911 2.44886 52.1726C2.2178 51.754 2.10227 51.2834 2.10227 50.7607C2.10227 50.2398 2.2178 49.7701 2.44886 49.3516C2.67992 48.9311 3.01799 48.5978 3.46307 48.3516C3.90814 48.1054 4.45076 47.9822 5.09091 47.9822ZM5.09091 49.4197C4.71212 49.4197 4.39205 49.4737 4.13068 49.5817C3.86932 49.6877 3.6714 49.8411 3.53693 50.0419C3.40246 50.2408 3.33523 50.4804 3.33523 50.7607C3.33523 51.0391 3.40246 51.2786 3.53693 51.4794C3.6714 51.6802 3.86932 51.8345 4.13068 51.9425C4.39205 52.0485 4.71212 52.1016 5.09091 52.1016C5.4697 52.1016 5.78977 52.0485 6.05114 51.9425C6.3125 51.8345 6.51042 51.6802 6.64489 51.4794C6.77936 51.2786 6.84659 51.0391 6.84659 50.7607C6.84659 50.4804 6.77936 50.2408 6.64489 50.0419C6.51042 49.8411 6.3125 49.6877 6.05114 49.5817C5.78977 49.4737 5.4697 49.4197 5.09091 49.4197ZM2.18182 47.1612V45.4197L5.78409 43.9425V43.8743L2.18182 42.397L2.18182 40.6555H8V42.0249H4.42614V42.0732L7.96307 43.4709V44.3459L4.40625 45.7436V45.7919H8V47.1612H2.18182ZM2.18182 39.7784V38.0369L5.78409 36.5597V36.4915L2.18182 35.0142V33.2727H8L8 34.642H4.42614V34.6903L7.96307 36.0881V36.9631L4.40625 38.3608V38.4091H8V39.7784H2.18182ZM2.18182 28.8757L2.18182 27.4723H5.93466C6.36837 27.4723 6.74621 27.5755 7.06818 27.782C7.38826 27.9884 7.63636 28.2763 7.8125 28.6456C7.98674 29.0149 8.07386 29.4439 8.07386 29.9325C8.07386 30.4268 7.98674 30.8587 7.8125 31.228C7.63636 31.5973 7.38826 31.8842 7.06818 32.0888C6.74621 32.2933 6.36837 32.3956 5.93466 32.3956H2.18182V30.9893H5.8125C6.01326 30.9893 6.19223 30.9458 6.34943 30.8587C6.50663 30.7696 6.62973 30.6456 6.71875 30.4865C6.80777 30.3274 6.85227 30.1428 6.85227 29.9325C6.85227 29.7223 6.80777 29.5386 6.71875 29.3814C6.62973 29.2223 6.50663 29.0982 6.34943 29.0092C6.19223 28.9202 6.01326 28.8757 5.8125 28.8757H2.18182ZM2.18182 21.6392H8V22.8324L4.64205 25.1477V25.1847H8V26.5909H2.18182V25.3807L5.53409 23.0909V23.0426H2.18182V21.6392ZM2.18182 19.3487H8V20.755H2.18182V19.3487ZM3.32386 18.6562H2.18182L2.18182 13.7386H3.32386L3.32386 15.5028H8V16.8892H3.32386V18.6562ZM2.18182 13.3416V11.7706L4.61648 10.5405V10.4893L2.18182 9.25923V7.68821L6.05682 9.81605H8V11.2138H6.05682L2.18182 13.3416Z"
@@ -54,32 +45,41 @@
                             </svg>
                         </span>
 
-                        <div class="toggle-menu-container">
-                            <input class="checkbox" type="checkbox" id="toggle-btn" aria-label="menu drawer"/>
-                            <label class="hamburger" for="toggle-btn" aria-hidden="true">
-                                <span class="line line1"></span>
-                                <span class="line line2"></span>
-                                <span class="line line3"></span>
-                            </label>
+                    <div class="toggle-menu-container">
+                        <input class="checkbox" type="checkbox" id="toggle-btn" aria-label="menu drawer"/>
+                        <label class="hamburger" for="toggle-btn" aria-hidden="true">
+                            <span class="line line1"></span>
+                            <span class="line line2"></span>
+                            <span class="line line3"></span>
+                        </label>
 
-                            <ul class="menu-items" role="menu">
-                                <li role="menuitem"><a href="#">Visit</a></li>
-                                <li role="menuitem"><a href="#">Programme</a></li>
-                                <li role="menuitem"><a href="#">About</a></li>
-                            </ul>
-                        </div>
-
-                        <ul class="nav-desktop">
-                            <li><a href="visit.html">Visit</a></li>
-                            <li><a href="about.html">Programme</a></li>
-                            <li><a href="programme.html">About</a></li>
+                        <ul class="menu-items" role="menu">
+                            <li role="menuitem"><a href="#">Visit</a></li>
+                            <li role="menuitem"><a href="#">Programme</a></li>
+                            <li role="menuitem"><a href="#">About</a></li>
                         </ul>
                     </div>
+
+                    <ul class="nav-desktop">
+                        <li><a href="visit.html">Visit</a></li>
+                        <li><a href="about.html">Programme</a></li>
+                        <li><a href="programme.html">About</a></li>
+                    </ul>
                 </div>
-            </nav>
+            </div>
+        </nav>
+
+        <div class="hero">
+
+            <video autoplay loop muted playsinline class="hero-video hero-video-large">
+                <source src="assets/hero-video-large.mp4" type="video/mp4">
+            </video>
+            <video autoplay loop muted playsinline class="hero-video hero-video-small">
+                <source src="assets/hero-video-mobile.mp4" type="video/mp4">
+            </video>
 
             <div class="hero-content">
-                <h1>Discover our<br> interactive exhibitions</h1>
+                <h1>Discover our <br> interactive exhibitions</h1>
                 <a href="#" class="btn-primary">plan your visit</a>
             </div>
 
