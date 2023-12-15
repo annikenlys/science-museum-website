@@ -33,27 +33,22 @@ p {
 /*BUTTONS*/
 .btn-primary {
     color: var(--white);
-    border: solid 2px var(--white);
-    height: 60px;
-    width: 300px;
-    padding: 14px 64px;
-    font-size: 1.15rem;
-    font-weight: 600;
+    border: solid 1px var(--white);
+    height: 50px;
+    width: 270px;
+    font-size: 1.5rem;
+    font-weight: 400;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    text-transform: uppercase;
-}
-
-.btn-primary:hover {
-    font-weight: 800;
-    font-size: 1.2rem;
-    transition: all 0.2s ease;
     margin: 0;
 }
 
-
+.btn-primary:hover {
+    transition: all 0.2s ease;
+    letter-spacing: 1px;
+}
 
 * {
     box-sizing: border-box;
@@ -78,7 +73,6 @@ a {
 
 /*HEADER*/
 .navbar {
-    position: fixed;
     top: 0;
     width: 100%;
     display: flex;
@@ -178,7 +172,7 @@ a {
 .menu-items a {
     color: var(--white);
     font-size: 1.563rem;
-    font-weight: 600;
+    font-weight: 700;
     text-transform: uppercase;
 }
 
@@ -414,8 +408,7 @@ footer {
         text-transform: uppercase;
         color: var(--white);
         font-weight: 700;
-        font-size: 1.25rem;
-        line-height: 130%;
+        font-size: 1.5rem;
     }
 
     .nav-container  a:hover {
